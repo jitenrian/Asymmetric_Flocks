@@ -311,6 +311,8 @@ def exchange(arr):
                 
                 if vx_average != 0:
                     orientation = (180/np.pi)*np.arctan(vy_average/vx_average)
+                    if orientation<0:
+                        orientation = orientation + 180
                 else:
                     orientation = 90
                 timestep = g*dt
@@ -350,7 +352,7 @@ if __name__=="__main__":
     for Beta in beta:
         for Alpha in Alps:
             for A in Asy:
-                name ="Alp" + str(Alpha) + "Bet" + str(Beta) +  "nis" + str(F) + "A" + str(A)
+                name ="Alp" + str(Alpha) + "Bet" + str(Beta) +  "nis" + str(F) + "A" + str(A/k)
                 arr = [J,A,chi,eta,Am,dt,T,L,IR,MX,MY,mu,F,Alpha,Beta,name]
                 Arr.append(arr)
     

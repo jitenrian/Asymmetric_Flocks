@@ -9,7 +9,7 @@ for files in parent_lis:
     if files.startswith('Alp'):
         child1_dir.append(os.path.join(parent_dir, files))
 
-title_list = ['Veloc_VS_t', 'Thet_VS_t', 'XVelo_VS_t', 'YVelo_VS_t', 'XVel_Var_VS_t', 'YVel_Var_VS_t', 'Spin_VS_t', 'Spin_Var_VS_t']
+title_list = ['Veloc_VS_t.png', 'Thet_VS_t.png', 'XVelo_VS_t.png', 'YVelo_VS_t.png', 'XVel_Var_VS_t.png', 'YVel_Var_VS_t.png', 'Spin_VS_t.png', 'Spin_Var_VS_t.png']
 for folders_loc in child1_dir:
     os.chdir(folders_loc)
     child_lis = os.listdir(folders_loc)
